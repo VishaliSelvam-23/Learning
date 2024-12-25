@@ -81,8 +81,7 @@ public class GitCommitTest {
 			// Push to the repository
 			System.out.println("Pushing to repo");
 			String token = System.getenv("GITHUB_TOKEN");
-
-			git.push().setRemote("origin").setRefSpecs(new RefSpec("refs/heads/main")) // Ensure you're pushing to the
+            git.push().setRemote("origin").setRefSpecs(new RefSpec("refs/heads/main")) // Ensure you're pushing to the
 																						// correct branch
 					.setCredentialsProvider(new UsernamePasswordCredentialsProvider("VishaliSelvam-23",
 							"token"))
