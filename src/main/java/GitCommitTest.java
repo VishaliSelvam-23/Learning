@@ -89,6 +89,7 @@ public class GitCommitTest {
             git.close();
 			System.out.println("Git Push successful!");
 		} catch (Exception e) {
+			
 			e.printStackTrace();
 		}
 	}
